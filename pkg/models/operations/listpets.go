@@ -12,6 +12,13 @@ type ListPetsRequest struct {
 	Limit *int `queryParam:"style=form,explode=true,name=limit"`
 }
 
+func (o *ListPetsRequest) GetLimit() *int {
+	if o == nil {
+		return nil
+	}
+	return o.Limit
+}
+
 type ListPetsResponse struct {
 	ContentType string
 	// unexpected error
@@ -21,4 +28,46 @@ type ListPetsResponse struct {
 	Pets        []shared.Pet
 	StatusCode  int
 	RawResponse *http.Response
+}
+
+func (o *ListPetsResponse) GetContentType() string {
+	if o == nil {
+		return ""
+	}
+	return o.ContentType
+}
+
+func (o *ListPetsResponse) GetError() *shared.Error {
+	if o == nil {
+		return nil
+	}
+	return o.Error
+}
+
+func (o *ListPetsResponse) GetHeaders() map[string][]string {
+	if o == nil {
+		return nil
+	}
+	return o.Headers
+}
+
+func (o *ListPetsResponse) GetPets() []shared.Pet {
+	if o == nil {
+		return nil
+	}
+	return o.Pets
+}
+
+func (o *ListPetsResponse) GetStatusCode() int {
+	if o == nil {
+		return 0
+	}
+	return o.StatusCode
+}
+
+func (o *ListPetsResponse) GetRawResponse() *http.Response {
+	if o == nil {
+		return nil
+	}
+	return o.RawResponse
 }

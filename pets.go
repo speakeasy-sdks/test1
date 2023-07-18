@@ -10,6 +10,7 @@ import (
 	"net/http"
 	"strings"
 	"users/pkg/models/operations"
+	"users/pkg/models/sdkerrors"
 	"users/pkg/models/shared"
 	"users/pkg/utils"
 )
@@ -71,6 +72,8 @@ func (s *pets) CreatePets(ctx context.Context) (*operations.CreatePetsResponse, 
 			}
 
 			res.Error = out
+		default:
+			return nil, sdkerrors.NewSDKError(fmt.Sprintf("unknown content-type received: %s", contentType), httpRes.StatusCode, string(rawBody), httpRes)
 		}
 	}
 
@@ -129,6 +132,8 @@ func (s *pets) ListPets(ctx context.Context, request operations.ListPetsRequest)
 			}
 
 			res.Pets = out
+		default:
+			return nil, sdkerrors.NewSDKError(fmt.Sprintf("unknown content-type received: %s", contentType), httpRes.StatusCode, string(rawBody), httpRes)
 		}
 	default:
 		switch {
@@ -139,6 +144,8 @@ func (s *pets) ListPets(ctx context.Context, request operations.ListPetsRequest)
 			}
 
 			res.Error = out
+		default:
+			return nil, sdkerrors.NewSDKError(fmt.Sprintf("unknown content-type received: %s", contentType), httpRes.StatusCode, string(rawBody), httpRes)
 		}
 	}
 
@@ -194,6 +201,8 @@ func (s *pets) ShowPetByID(ctx context.Context, request operations.ShowPetByIDRe
 			}
 
 			res.Pet = out
+		default:
+			return nil, sdkerrors.NewSDKError(fmt.Sprintf("unknown content-type received: %s", contentType), httpRes.StatusCode, string(rawBody), httpRes)
 		}
 	default:
 		switch {
@@ -204,6 +213,8 @@ func (s *pets) ShowPetByID(ctx context.Context, request operations.ShowPetByIDRe
 			}
 
 			res.Error = out
+		default:
+			return nil, sdkerrors.NewSDKError(fmt.Sprintf("unknown content-type received: %s", contentType), httpRes.StatusCode, string(rawBody), httpRes)
 		}
 	}
 
