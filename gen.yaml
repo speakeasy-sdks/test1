@@ -2,22 +2,26 @@ configVersion: 1.0.0
 management:
   docChecksum: 21c25ca8a734b4fb704e98d966524ee0
   docVersion: 1.0.0
-  speakeasyVersion: 1.101.0
-  generationVersion: 2.161.0
+  speakeasyVersion: 1.104.0
+  generationVersion: 2.169.0
 generation:
   comments:
     disableComments: false
     omitDescriptionIfSummaryPresent: false
   baseServerURL: ""
+  repoURL: https://github.com/speakeasy-sdks/test1.git
   sdkClassName: users
   singleTagPerOp: false
   tagNamespacingDisabled: false
 features:
   go:
-    core: 2.91.5
+    core: 2.94.0
     globalServerURLs: 2.82.0
 go:
-  version: 1.4.1
+  version: 1.5.0
   flattenGlobalSecurity: true
+  installationURL: https://github.com/speakeasy-sdks/test1
   maxMethodParams: 0
   packageName: users
+  published: true
+  repoSubDirectory: .
