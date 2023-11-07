@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"net/http"
 	"time"
-	"users/pkg/utils"
+	"users/v2/pkg/utils"
 )
 
 // ServerList contains the list of servers available to the SDK
@@ -60,7 +60,7 @@ func (c *sdkConfiguration) GetServerDetails() (string, map[string]string) {
 }
 
 type Users struct {
-	Pets *pets
+	Pets *Pets
 
 	sdkConfiguration sdkConfiguration
 }
@@ -115,9 +115,9 @@ func New(opts ...SDKOption) *Users {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "1.0.0",
-			SDKVersion:        "1.5.0",
-			GenVersion:        "2.169.0",
-			UserAgent:         "speakeasy-sdk/go 1.5.0 2.169.0 1.0.0 users",
+			SDKVersion:        "2.0.0",
+			GenVersion:        "2.181.1",
+			UserAgent:         "speakeasy-sdk/go 2.0.0 2.181.1 1.0.0 users",
 		},
 	}
 	for _, opt := range opts {

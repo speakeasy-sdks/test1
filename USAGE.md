@@ -7,7 +7,7 @@ package main
 import (
 	"context"
 	"log"
-	"users"
+	users "users/v2"
 )
 
 func main() {

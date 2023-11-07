@@ -4,7 +4,7 @@ package operations
 
 import (
 	"net/http"
-	"users/pkg/models/shared"
+	"users/v2/pkg/models/shared"
 )
 
 type ShowPetByIDRequest struct {

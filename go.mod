@@ -1,4 +1,4 @@
-module users
+module users/v2
 
 go 1.14
 
