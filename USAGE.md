@@ -1,12 +1,11 @@
 <!-- Start SDK Example Usage -->
-
-
 ```go
 package main
 
 import (
 	"context"
 	"log"
+	"net/http"
 	users "users/v2"
 )
 
