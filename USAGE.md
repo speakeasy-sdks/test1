@@ -7,13 +7,17 @@ import (
 	"log"
 	"net/http"
 	users "users/v2"
+	"users/v2/pkg/models/shared"
 )
 
 func main() {
 	s := users.New()
 
 	ctx := context.Background()
-	res, err := s.Pets.CreatePets(ctx)
+	res, err := s.Pets.CreatePets(ctx, shared.Pet{
+		ID:   596804,
+		Name: "string",
+	})
 	if err != nil {
 		log.Fatal(err)
 	}
