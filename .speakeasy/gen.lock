@@ -4,7 +4,7 @@ management:
   docChecksum: aa6977d96a8cc744e4588f1cbcefdde3
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.234.3
+  generationVersion: 2.237.2
   releaseVersion: 2.1.3
   configChecksum: a660770979819a170e57924892ccd8ac
   repoURL: https://github.com/speakeasy-sdks/test1.git
@@ -20,7 +20,6 @@ generatedFiles:
   - users.go
   - go.mod
   - go.sum
-  - tests/helpers.go
   - pkg/models/sdkerrors/sdkerror.go
   - pkg/types/bigint.go
   - pkg/types/date.go
