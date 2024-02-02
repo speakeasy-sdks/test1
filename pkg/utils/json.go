@@ -12,7 +12,7 @@ import (
 	"time"
 	"unsafe"
 
-	"users/v2/pkg/types"
+	"users/v3/pkg/types"
 
 	"github.com/ericlagergren/decimal"
 )

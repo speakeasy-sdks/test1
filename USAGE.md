@@ -6,8 +6,8 @@ import (
 	"context"
 	"log"
 	"net/http"
-	users "users/v2"
-	"users/v2/pkg/models/shared"
+	users "users/v3"
+	"users/v3/pkg/models/shared"
 )
 
 func main() {

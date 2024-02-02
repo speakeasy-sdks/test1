@@ -12,7 +12,7 @@ import (
 
 	"github.com/ericlagergren/decimal"
 
-	"users/v2/pkg/types"
+	"users/v3/pkg/types"
 )
 
 func populateForm(paramName string, explode bool, objType reflect.Type, objValue reflect.Value, delimiter string, getFieldName func(reflect.StructField) string) url.Values {

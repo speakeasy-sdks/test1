@@ -17,9 +17,9 @@ Create a pet
 package main
 
 import(
-	users "users/v2"
+	users "users/v3"
 	"context"
-	"users/v2/pkg/models/shared"
+	"users/v3/pkg/models/shared"
 	"log"
 	"net/http"
 )
@@ -67,9 +67,9 @@ List all pets
 package main
 
 import(
-	users "users/v2"
+	users "users/v3"
 	"context"
-	"users/v2/pkg/models/operations"
+	"users/v3/pkg/models/operations"
 	"log"
 )
 
@@ -113,9 +113,9 @@ Info for a specific pet
 package main
 
 import(
-	users "users/v2"
+	users "users/v3"
 	"context"
-	"users/v2/pkg/models/operations"
+	"users/v3/pkg/models/operations"
 	"log"
 )
 

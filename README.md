@@ -20,8 +20,8 @@ import (
 	"context"
 	"log"
 	"net/http"
-	users "users/v2"
-	"users/v2/pkg/models/shared"
+	users "users/v3"
+	"users/v3/pkg/models/shared"
 )
 
 func main() {
@@ -86,9 +86,9 @@ import (
 	"context"
 	"errors"
 	"log"
-	users "users/v2"
-	"users/v2/pkg/models/sdkerrors"
-	"users/v2/pkg/models/shared"
+	users "users/v3"
+	"users/v3/pkg/models/sdkerrors"
+	"users/v3/pkg/models/shared"
 )
 
 func main() {
@@ -134,8 +134,8 @@ import (
 	"context"
 	"log"
 	"net/http"
-	users "users/v2"
-	"users/v2/pkg/models/shared"
+	users "users/v3"
+	"users/v3/pkg/models/shared"
 )
 
 func main() {
@@ -170,8 +170,8 @@ import (
 	"context"
 	"log"
 	"net/http"
-	users "users/v2"
-	"users/v2/pkg/models/shared"
+	users "users/v3"
+	"users/v3/pkg/models/shared"
 )
 
 func main() {

@@ -9,10 +9,10 @@ import (
 	"io"
 	"net/http"
 	"strings"
-	"users/v2/pkg/models/operations"
-	"users/v2/pkg/models/sdkerrors"
-	"users/v2/pkg/models/shared"
-	"users/v2/pkg/utils"
+	"users/v3/pkg/models/operations"
+	"users/v3/pkg/models/sdkerrors"
+	"users/v3/pkg/models/shared"
+	"users/v3/pkg/utils"
 )
 
 type Pets struct {
