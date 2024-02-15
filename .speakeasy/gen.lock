@@ -4,16 +4,16 @@ management:
   docChecksum: aa6977d96a8cc744e4588f1cbcefdde3
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.250.2
-  releaseVersion: 3.0.1
-  configChecksum: c9d53f3f0d0bfceb730d041d42e54200
+  generationVersion: 2.258.2
+  releaseVersion: 3.1.0
+  configChecksum: 7568dce35ee6e491286646ec38d40bba
   repoURL: https://github.com/speakeasy-sdks/test1.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/test1
   published: true
 features:
   go:
-    core: 3.3.2
+    core: 3.4.0
     globalServerURLs: 2.82.1
 generatedFiles:
   - pets.go
@@ -52,3 +52,4 @@ generatedFiles:
   - docs/sdks/pets/README.md
   - USAGE.md
   - .gitattributes
+  - internal/hooks/hooks.go
