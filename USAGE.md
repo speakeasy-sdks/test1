@@ -5,7 +5,6 @@ package main
 import (
 	"context"
 	"log"
-	"net/http"
 	users "users/v3"
 	"users/v3/pkg/models/shared"
 )
@@ -21,8 +20,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
-	if res.StatusCode == http.StatusOK {
+	if res != nil {
 		// handle response
 	}
 }
